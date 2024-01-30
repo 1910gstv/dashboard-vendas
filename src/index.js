@@ -25,15 +25,3 @@ function authLogin(e) {
      })
 }
 
-// function login() {
-//     axios.post('http://localhost:8081/authenticate').then(response => {
-//     if(response.status == 200) {
-//         console.log('Login realizado')
-//         window.location.href = '../views/home.html';
-//     }
-//     }).catch(err => {
-//         console.log(err)
-//         console.log("User não autenticado")
-//     })
-// }
-

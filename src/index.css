@@ -121,16 +121,82 @@
 #home {
     display: flex;
     flex-direction: row;
-    gap: 24px;
-    background-color: #F2F2F2;    
+    gap: 24px;  
+    width: 100vw;
     height: 100vh;
+    background-color: #dadada;
 }
 
-aside {
-    background-color: #DEDEDE;
-    width: 400px;
-}
-
-#cadastrar-venda {
+.aside {
+    background-color: #4C4EF9;
+    width: 20vw;
+    padding: 18px;
+    color: #fff;
     font-family: 'poppins';
+}
+
+.aside h2 {
+    font-size: 1.2rem;
+}
+
+.homeView {
+    width: 75vw;
+    padding: 18px;
+}
+
+.homeView h2 {
+    font-family: 'poppins';
+    font-weight: 300;
+    color: hsl(0, 0%, 15%);
+    font-size: 1.2rem;
+}
+
+.dataHomeView {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.homeViewHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeViewHeader select {
+    font-family: 'poppins';
+    border: 1px solid #dadada;
+    padding: 4px 12px;
+    outline: none;
+}
+
+.data-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 36px;
+}
+
+.box {
+    background-color: #fff;
+    width: 30%;
+    height: 200px;
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px #00000030;
+    padding: 16px;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+.box p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 65%);
+    text-transform: lowercase;    
+}
+
+.box .principalData {
+    text-align: center;
+    font-size: 3rem;
+    color: #dadada;
+    margin: 24px auto;
 }
