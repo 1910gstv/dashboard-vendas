@@ -1,14 +1,14 @@
 const btnLogin = document.getElementById('loginButton')
+const baseURL = 'http://localhost:8081'
 
 btnLogin.addEventListener("click", authLogin, false)
 
-function authLogin(e) {
+async function authLogin(e) {
     
     var login = document.getElementById("username").value;
     var senha = document.getElementById("password").value;
-    var title = document.getElementsByClassName('title')
 
-    axios.post('http://localhost:8081/authenticate', { 
+    axios.post(`${baseURL}/authenticate`, { 
          login, 
          senha 
      }).then(response => {
@@ -23,5 +23,6 @@ function authLogin(e) {
      }).catch(err => {
         console.log(err.message)
      })
+
 }
 

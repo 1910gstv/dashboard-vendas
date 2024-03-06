@@ -24,16 +24,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../src/ajax.js"></script>
+
 
     <link rel="stylesheet" href="../src/index.css" />
+
   </head>
   <body>
     <div id="home">
       <aside class="aside">
         <h2>Interact Dashboard</h2>
+        <a href="#" id="cadastrarVenda">Cadastre uma venda</a>
       </aside>
 
-      <section class="homeView">
+      <div id="homeView">
         <div class="homeViewHeader">
             <h2>Dashboard</h2>
 
@@ -49,45 +55,48 @@
 
         <div class="dataHomeView">
           <div class="data-boxes">
-            <div class="box">
+            <div class="box" id="faturamento">
                 <p>
-                    Vendas cadastradas
+                    Faturamento
                 </p>
                 <div class="principalData">#</div>
             </div>
-            <div class="box">
+            <div class="box" id="total_custos">
                 <p>
-                    Valor de vendas
+                    Total Custos
                 </p>
                 <div class="principalData">#</div>
             </div>
-            <div class="box">
+            <div class="box" id="total_lucro">
                 <p>
-                    Clientes Novos
+                    Total Lucro
                 </p>
                 <div class="principalData">#</div>
             </div>
-            <div class="box">
+            <div class="box" id="pedidos_abertos">
                 <p>
                     Pedidos em aberto
                 </p>
                 <div class="principalData">#</div>
             </div>
-            <div class="box">
+            <div class="box" id="numero_pedidos">
                 <p>
-                    Pedidos concluídos
+                    Número de Pedidos
                 </p>
                 <div class="principalData">#</div>
             </div>
-            <div class="box">
+            <div class="box" id="itens_vendidos">
                 <p>
-                    Lucro/Prejuízo
+                    Itens vendidos
                 </p>
                 <div class="principalData">#</div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      <!-- Criar TOP 5 Produtos -->
+      <!-- Criar TOP 5 Vendedores -->
     </div>
 
     <script src="../src/home.js"></script>

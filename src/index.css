@@ -1,115 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;1,100&family=Sacramento&family=Space+Grotesk:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;1,100&family=Sacramento&family=Space+Grotesk:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* === Login === */
 .login {
-    height: 100vh;
-    padding: 32px;
-    box-sizing: border-box;
+  height: 100vh;
+  padding: 32px;
+  box-sizing: border-box;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .title {
-    text-align: center;
-    font-family: 'Lato';
-    font-size: 2em;
-    font-weight: 700;
+  text-align: center;
+  font-family: "Lato";
+  font-size: 2em;
+  font-weight: 700;
 }
 
 .title.wrong {
-    color: red;
+  color: red;
 }
 
 .principal {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .left,
 .right {
-    width: 50vw;
-    padding: 16px;    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 50vw;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .left img {
-    width: 80%;
+  width: 80%;
 }
 
 .right {
-    font-family: 'Lato';
+  font-family: "Lato";
 }
 
-.right .form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1.5em;
+.right .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5em;
 }
 
 .login-box {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 8px;
-    margin-bottom: 1em;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+  margin-bottom: 1em;
+  position: relative;
 }
 
 .login-box input {
-    border-radius: 16px;
-    padding: 12px 32px;
-    border: 1px solid hsl(0, 0%, 80%);
-    outline: none;
-    width: 350px;
+  border-radius: 16px;
+  padding: 12px 32px;
+  border: 1px solid hsl(0, 0%, 80%);
+  outline: none;
+  width: 350px;
 }
 
 .login-box i {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: hsl(0, 0%, 50%)
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: hsl(0, 0%, 50%);
 }
 
 .right .form button {
-    border: none;
-    border-radius: 16px;
-    padding: 8px 32px;
-    background-color: #4C4EF9;
-    width: 100%;
-    color: #fff;
-    font-weight: 700;
-    font-size: 0.9em;
-    letter-spacing: 1px;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 32px;
+  background-color: #4c4ef9;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9em;
+  letter-spacing: 1px;
 }
 
 #error-msg {
-    color: red;
-    margin-bottom: 2em;
-    font-size: .65em;
-    display: none;
-    font-weight: 700;
+  color: red;
+  margin-bottom: 2em;
+  font-size: 0.65em;
+  display: none;
+  font-weight: 700;
 }
 
-
 .right a {
-    text-decoration: none;
-    color: #4C4EF9;
+  text-decoration: none;
+  color: #4c4ef9;
 }
 
 /* =============
@@ -119,84 +117,84 @@
 /* Aside */
 
 #home {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;  
-    width: 100vw;
-    height: 100vh;
-    background-color: #dadada;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #dadada;
 }
 
 .aside {
-    background-color: #4C4EF9;
-    width: 20vw;
-    padding: 18px;
-    color: #fff;
-    font-family: 'poppins';
+  background-color: #4c4ef9;
+  width: 20vw;
+  padding: 18px;
+  color: #fff;
+  font-family: "poppins";
 }
 
 .aside h2 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .homeView {
-    width: 75vw;
-    padding: 18px;
+  width: 75vw;
+  padding: 18px;
 }
 
 .homeView h2 {
-    font-family: 'poppins';
-    font-weight: 300;
-    color: hsl(0, 0%, 15%);
-    font-size: 1.2rem;
+  font-family: "poppins";
+  font-weight: 300;
+  color: hsl(0, 0%, 15%);
+  font-size: 1.2rem;
 }
 
 .dataHomeView {
-    margin-top: 1rem;
-    width: 100%;
+  margin-top: 1rem;
+  width: 100%;
 }
 
 .homeViewHeader {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .homeViewHeader select {
-    font-family: 'poppins';
-    border: 1px solid #dadada;
-    padding: 4px 12px;
-    outline: none;
+  font-family: "poppins";
+  border: 1px solid #dadada;
+  padding: 4px 12px;
+  outline: none;
 }
 
 .data-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 36px;
 }
 
 .box {
-    background-color: #fff;
-    width: 30%;
-    height: 200px;
-    border-radius: 16px;
-    box-shadow: 5px 5px 10px #00000030;
-    padding: 16px;
-    box-sizing: border-box;
-    font-family: 'poppins';
+  background-color: #fff;
+  width: 30%;
+  height: 200px;
+  border-radius: 16px;
+  box-shadow: 5px 5px 10px #00000030;
+  padding: 16px;
+  box-sizing: border-box;
+  font-family: "poppins";
 }
 
 .box p {
-    font-size: 1rem;
-    font-weight: 700;
-    color: hsl(0, 0%, 65%);
-    text-transform: lowercase;    
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 65%);
+  text-transform: lowercase;
 }
 
 .box .principalData {
-    text-align: center;
-    font-size: 3rem;
-    color: #dadada;
-    margin: 24px auto;
+  text-align: center;
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 55%);
+  margin: 24px auto;
 }
