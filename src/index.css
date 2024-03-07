@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: none;
+}
+
+.font-white {
+  color: #fff;
+}
+
 /* === Login === */
 .login {
   height: 100vh;
@@ -137,12 +146,12 @@
   font-size: 1.2rem;
 }
 
-.homeView {
+#homeView {
   width: 75vw;
   padding: 18px;
 }
 
-.homeView h2 {
+#homeView h2 {
   font-family: "poppins";
   font-weight: 300;
   color: hsl(0, 0%, 15%);
