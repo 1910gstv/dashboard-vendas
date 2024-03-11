@@ -63,6 +63,15 @@ async function returnLucro() {
   return result;
 }
 
+async function returnPedidosAbertos() {
+  const result = await axios.get(`${baseURL}/pedidosabertos`).then((response) => {
+    const dataResult =  response.data.length
+    return dataResult
+  });
+
+  return result;
+}
+
 //Alimentar o Front-End
 async function feedDatas() {
   let data = state.dataBoxes;
@@ -70,7 +79,7 @@ async function feedDatas() {
   data.faturamento.innerText = "R$" + (await returnFaturamento());
   data.total_custos.innerText = "R$" + (await returnCustos());
   data.total_lucro.innerText = "R$" + (await returnLucro());
-  data.pedidos_abertos.innerText = 1000;
+  data.pedidos_abertos.innerText = await returnPedidosAbertos();
   data.numero_pedidos.innerText = await returnNumeroPedidos();
   data.itens_vendidos.innerText = await returnItensVendidos();
 }
@@ -78,7 +87,6 @@ async function feedDatas() {
 function init() {
   feedDatas();
 }
-
 
 init();
 
