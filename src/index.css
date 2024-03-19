@@ -144,6 +144,11 @@ a {
 
 .aside h2 {
   font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+
+.aside a {
+  line-height: 28px;
 }
 
 #homeView {
