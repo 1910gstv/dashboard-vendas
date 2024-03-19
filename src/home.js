@@ -64,10 +64,12 @@ async function returnLucro() {
 }
 
 async function returnPedidosAbertos() {
-  const result = await axios.get(`${baseURL}/pedidosabertos`).then((response) => {
-    const dataResult =  response.data.length
-    return dataResult
-  });
+  const result = await axios
+    .get(`${baseURL}/pedidosabertos`)
+    .then((response) => {
+      const dataResult = response.data.length;
+      return dataResult;
+    });
 
   return result;
 }
@@ -84,8 +86,25 @@ async function feedDatas() {
   data.itens_vendidos.innerText = await returnItensVendidos();
 }
 
+// Cadastrar pedido
+
+async function enviarPedido() {
+  const sendData = await axios
+    .post(`${baseURL}/criarPedido`, {
+      qtd: 2,
+      data_pedido: "2023-03-12",
+      valor_total: 2199.99,
+      id_usuario: 1,
+      id_produto: 1,
+      id_cliente: 1,
+      statusPedidos: 1,
+    })
+    .then((response) => console.log(response.data));
+}
+
 function init() {
   feedDatas();
+  enviarPedido();
 }
 
 init();
