@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard - Login</title>
-    <link type="image/png" sizes="32x32" rel="icon" href="/img/icons8-painel-de-instrumentos-cute-color-32.png">
-    <link rel="stylesheet" href="/src/index.css">
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="/img/icons8-painel-de-instrumentos-cute-color-32.png"
+    />
+    <link rel="stylesheet" href="/src/css/index.css" />
 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-</head>
-<body>
-    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
     <div class="login">
-        <div class="wrapper">
-            <div class="title">Olá, seja bem-vindo. Faça Login para continuar</div>
-            <div class="principal">
-                <div class="left">
-                    <img src="/img/20945194.jpg" alt="dashboard">
-                </div>
-                <div class="right">
-                    <div class="form">
-                        <div class="login-box">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" name="username" id="username" class="loginInput" placeholder="Digite seu usuário"/>
-                        </div>
-                        
-                        <div class="login-box">
-                            <i class="fa-solid fa-lock"></i>
-                            <input type="password" name="password" id="password" class="loginInput" placeholder="Digite sua senha"/>
-                        </div>
-                        <small id="error-msg">Usuário ou senha incorretos, tente novamente!</small>
+      <div class="wrapper">
+        <div class="title">Olá, seja bem-vindo. Faça Login para continuar</div>
+        <div class="principal">
+          <div class="left">
+            <img src="/img/20945194.jpg" alt="dashboard" />
+          </div>
+          <div class="right">
+            <div class="form">
+              <div class="login-box">
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="loginInput"
+                  placeholder="Digite seu usuário"
+                />
+              </div>
 
-                        <button id="loginButton">Login</button>
-                    </div>
+              <div class="login-box">
+                <i class="fa-solid fa-lock"></i>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="loginInput"
+                  placeholder="Digite sua senha"
+                />
+              </div>
+              <small id="error-msg"
+                >Usuário ou senha incorretos, tente novamente!</small
+              >
 
-                    <div class="cadastrar">
-                        <small>Ainda não possui conta?</small>
-                        <a href="#">Inscrever-se</a>
-                    </div>
-                </div>
+              <button id="loginButton" type="button">Login</button>
             </div>
+
+            <div class="cadastrar">
+              <small>Ainda não possui conta?</small>
+              <a href="#">Inscrever-se</a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-<script src="/src/index.js" type="module" ></script>
-    
-</body>
+    <script src="/controller/UsuarioController.js" type="module"></script>
+  </body>
 </html>
